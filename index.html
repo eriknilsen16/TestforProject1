@@ -43,7 +43,7 @@
       url: queryURL,
       method: "GET"})
       .then(function(response) {
-      console.log(response)
+      console.log(response.foods.foodNutrients[8].value)
       $("#food-view").text(JSON.stringify(response));
 
 
