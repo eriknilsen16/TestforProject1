@@ -45,7 +45,7 @@
       .then(function(response) {
       console.log(response)
       console.log(response.foods[0].foodNutrients[9].value)
-      $("#food-view").text(JSON.stringify(response));
+      $("#food-view").text(JSON.stringify(response.foods[0].foodNutrients[9].value));
 
 
 
