@@ -45,7 +45,12 @@
       .then(function(response) {
       console.log(response)
       console.log(response.foods[0].foodNutrients().value)
-      $("#food-view").text(JSON.stringify(response.foods[0].foodNutrients[nutrientId = 1008].value));
+      for (const calories of foodNutrients){
+        console.log(calories)
+          
+          
+          
+          $("#food-view").text(JSON.stringify(response.foods[0].foodNutrients[nutrientId = 1008].value));
 
 
 
